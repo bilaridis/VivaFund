@@ -223,9 +223,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
@@ -235,10 +234,34 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jQueryUI\external\jquery\jquery.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jQueryUI\package.json" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jQueryUI\AUTHORS.txt" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="Scripts\jQueryUI\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jQueryUI\index.html" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.css" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.js" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.min.css" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.min.js" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.structure.css" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.theme.css" />
+    <Content Include="Scripts\jQueryUI\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\jQueryUI\LICENSE.txt" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -286,12 +309,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">

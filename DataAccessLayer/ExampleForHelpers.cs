@@ -37,7 +37,6 @@ namespace DataAccessLayer
                     var dataTable = Helpers.DataObjectExtensions.ToDataTable(list);
                 }
             }
-
         }
     }
 }

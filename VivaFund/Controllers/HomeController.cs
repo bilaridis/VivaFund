@@ -12,6 +12,7 @@ namespace VivaFund.Controllers
         public ActionResult Index()
         {
            var obj = new  DataAccessLayer.ExampleForHelpers();
+            ViewBag.Title = "Viva Fund";
             return View();
         }
         [Authorize]

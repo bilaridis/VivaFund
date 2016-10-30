@@ -71,9 +71,9 @@ namespace VivaFund
                     // The `Authority` represents the v2.0 endpoint - https://login.microsoftonline.com/common/v2.0 
                     // The `Scope` describes the permissions that your app will need.  See https://azure.microsoft.com/documentation/articles/active-directory-v2-scopes/
                     // In a real application you could use issuer validation for additional checks, like making sure the user's organization has signed up for your app, for instance.
-
+                    Caption = "Microsoft Account",
                     ClientId = clientId,
-                    Authority = String.Format(CultureInfo.InvariantCulture, aadInstance, "common/v2.0/", ""),
+                    Authority = string.Format(CultureInfo.InvariantCulture, aadInstance, "common/v2.0/", ""),
                     RedirectUri = redirectUri,
                     Scope = "openid email profile",
                     ResponseType = "id_token",
@@ -93,9 +93,9 @@ namespace VivaFund
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            app.UseFacebookAuthentication(
-               appId: "207401706353847",
-               appSecret: "c1ae44b8f1bdc3d428dfd44046dea150");
+            //app.UseFacebookAuthentication(
+            //   appId: "207401706353847",
+            //   appSecret: "c1ae44b8f1bdc3d428dfd44046dea150");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
@@ -109,8 +109,9 @@ namespace VivaFund
             //notification.HandleResponse();
             //notification.Response.Redirect("/Error?message=" + notification.Exception.Message);
             //return Task.FromResult(0);
-            if (notification.Exception.Message.StartsWith("OICE_20004") || notification.Exception.Message.Contains("IDX10311")) { notification.SkipToNextMiddleware(); return Task.FromResult(0); }
-            return Task.FromResult(0);
+            if (!notification.Exception.Message.StartsWith("OICE_20004") &&
+                !notification.Exception.Message.Contains("IDX10311")) return Task.FromResult(0);
+            notification.SkipToNextMiddleware(); return Task.FromResult(0);
         }
     }
 }

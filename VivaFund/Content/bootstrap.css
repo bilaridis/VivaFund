@@ -4349,11 +4349,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #79c9ec;
-  border-color: #79c9ec;
+  background-color: #0078ae;
+  border-color: #0078ae;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #FFF;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4364,7 +4364,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #FFF;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {

@@ -17,7 +17,7 @@ namespace DataAccessLayer.Helpers
             try
             {
                 var columnsNames = (from DataColumn dataColumn in datatable.Columns select dataColumn.ColumnName).ToList();
-                temp = datatable.AsEnumerable().ToList().ConvertAll<T>(row => getObject<T>(row, columnsNames));
+                temp = datatable.AsEnumerable().ToList().ConvertAll<T>(row => GetObject<T>(row, columnsNames));
                 return temp;
             }
             catch
@@ -26,7 +26,7 @@ namespace DataAccessLayer.Helpers
             }
 
         }
-        public static T getObject<T>(DataRow row, List<string> columnsName) where T : new()
+        public static T GetObject<T>(DataRow row, List<string> columnsName) where T : new()
         {
             T obj = new T();
             try
@@ -97,12 +97,12 @@ namespace DataAccessLayer.Helpers
 
         private static T CreateItemFromRow<T>(DataRow row, IList<PropertyInfo> properties) where T : new()
         {
-            T item = new T();
+            var item = new T();
             foreach (var property in properties)
             {
                 if (property.PropertyType == typeof(System.DayOfWeek))
                 {
-                    DayOfWeek day = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), row[property.Name].ToString());
+                    var day = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), row[property.Name].ToString());
                     property.SetValue(item, day, null);
                 }
                 else

@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VivaFund", "VivaFund\VivaFund.csproj", "{01512421-473D-4C33-9C00-726354758A28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{7E91786B-FA0E-4B6A-894E-30B573CDF1C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider", "DataAccessLayer\DataProvider.csproj", "{7E91786B-FA0E-4B6A-894E-30B573CDF1C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModelAccess", "DomainModelAccess\DomainModelAccess.csproj", "{56D2D0FC-59ED-4280-A3E8-79C702BDC973}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7E91786B-FA0E-4B6A-894E-30B573CDF1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E91786B-FA0E-4B6A-894E-30B573CDF1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E91786B-FA0E-4B6A-894E-30B573CDF1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D2D0FC-59ED-4280-A3E8-79C702BDC973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D2D0FC-59ED-4280-A3E8-79C702BDC973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D2D0FC-59ED-4280-A3E8-79C702BDC973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D2D0FC-59ED-4280-A3E8-79C702BDC973}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

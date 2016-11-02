@@ -1,4 +1,4 @@
-﻿namespace DataAccessLayer.DomainModelAccess
+﻿namespace DomainModelAccess.DomainModelAccess
 {
     public class Customer
     {

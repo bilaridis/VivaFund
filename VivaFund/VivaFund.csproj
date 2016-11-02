@@ -316,9 +316,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+    <ProjectReference Include="..\DataAccessLayer\DataProvider.csproj">
       <Project>{7e91786b-fa0e-4b6a-894e-30b573cdf1c9}</Project>
-      <Name>DataAccessLayer</Name>
+      <Name>DataProvider</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

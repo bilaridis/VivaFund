@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DomainModelAccess.DomainModelAccess;
 
-namespace DataAccessLayer
+namespace DataProvider
 {
     public class ExampleForHelpers
     {

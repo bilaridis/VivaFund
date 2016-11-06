@@ -93,9 +93,9 @@ namespace VivaFund
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "207401706353847",
-            //   appSecret: "c1ae44b8f1bdc3d428dfd44046dea150");
+            app.UseFacebookAuthentication(
+               appId: "207401706353847",
+               appSecret: "c1ae44b8f1bdc3d428dfd44046dea150");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

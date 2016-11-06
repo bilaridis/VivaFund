@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Helpers
+namespace DataProvider.Helpers
 {
     public static class DataObjectExtensions
     {
